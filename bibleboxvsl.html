@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tanaor Bible Box | Tanaor</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+.cc-cl-text {
+  padding: 1px;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+</style>
+<style>
+.cc-headline-style {
+  font-size: 32px;
+  font-family: Helvetica, serif;
+  font-weight: 700;
+  margin-top: 15px;
+}
+</style>
+<style>
+.fk-image-defaults {
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+}
+
+.cc-cl-image {
+  color: black;
+}
+</style>
+<style>
+.fk-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 1px;
+  height: auto;
+  max-width: 100%;
+}
+
+.fk-col {
+  min-height: 25px;
+  padding: 1px;
+  flex-grow: 1;
+  width: min-content;
+}
+
+@media (max-width: 768px) {
+  .fk-row {
+    flex-wrap: wrap;
+  }
+  .fk-col {
+    flex-basis: 100%;
+    display: block;
+  }
+}
+</style>
+<style>
+.fk-bullet {
+  padding: 2px 15px 2px 15px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.fk-bullet-span {
+  color: red;
+}
+
+.fk-bullet-list-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.fk-bullet-icon-container {
+  padding: 5px 10px 5px 5px;
+}
+</style>
+<style>
+.countdown {
+  text-align: center;
+  font-family: Helvetica, serif;
+}
+
+.countdown-cont {
+  display: inline-table;
+}
+
+.countdown-block {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.colon {
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.countdown-digit {
+  font-size: 1rem;
+}
+
+.hidelabel {
+  visibility: hidden;
+}
+</style>
+<style>
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 20px auto;
+  white-space: normal;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  white-space: normal;
+}
+.btn.btn-primary.btn-one-style:active:focus {
+  box-shadow: none;
+}
+.btn.btn-primary.btn-one-style:focus {
+  box-shadow: none;
+}
+</style>
+<style>
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 20px auto;
+  white-space: normal;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary.btnStyle:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  white-space: normal;
+}
+.btn.btn-primary.btnStyle {
+  background: #f4f4f4;
+  color: #007bff;
+  border-color: #007bff;
+  border-radius: 30px;
+  border-width: 3px;
+  padding: 6px 20px;
+  white-space: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary.btnStyle:active:focus {
+  box-shadow: none;
+}
+.btn.btn-primary.btnStyle:focus {
+  box-shadow: none;
+}
+</style>
+<style>
+
+.cc-page-wrapper{--navy:#14213d;--gold:#b8893b;--cream:#faf6ee;--green:#1e7d3a;--grey:#6b6b6b;background:#fff;color:#222;font-family:Helvetica,Arial,sans-serif;min-height:100vh}
+.cc-page-wrapper .cc-topbar{background:var(--navy);padding:0;margin:0}
+.cc-page-wrapper .cc-topbar .cc-cl-text{color:#fff;font-size:15px;font-weight:700;text-align:center;padding:10px 12px;letter-spacing:.2px}
+.cc-page-wrapper .cc-logo{text-align:center;padding:12px 0 4px;background:#fff}.cc-page-wrapper .cc-logo img{height:55px;width:auto;max-width:60%}
+.cc-page-wrapper .cc-crumbs{background:var(--cream);border-bottom:1px solid #eadfca;padding:0}
+.cc-page-wrapper .cc-crumbs .cc-cl-text{font-size:14px;text-align:center;color:var(--grey);padding:10px 8px}
+.cc-page-wrapper .cc-crumbs .cc-current{color:var(--navy);font-weight:700}
+.cc-page-wrapper .cc-wait{max-width:820px;margin:0 auto;padding:0 12px}
+.cc-page-wrapper .cc-wait .fk-headline{font-size:26px;text-align:center;color:var(--navy);margin-top:22px}
+.cc-page-wrapper .cc-video-wrap{max-width:820px;margin:8px auto 0;padding:0 12px}
+.cc-page-wrapper .cc-video-wrap .embed-responsive{border-radius:10px;overflow:hidden;background:#111;box-shadow:0 6px 22px rgba(20,33,61,.25)}
+.cc-page-wrapper .cc-video-note{font-size:14px;color:var(--grey);text-align:center;padding:8px 0}
+.cc-page-wrapper .cc-offer{max-width:980px;margin:0 auto;padding:6px 12px 30px}
+.cc-page-wrapper .cc-offer-card{border:2px solid var(--gold);border-radius:14px;background:#fff;padding:14px;box-shadow:0 8px 28px rgba(20,33,61,.12)}
+.cc-page-wrapper .cc-offer-card .fk-row{align-items:center}
+.cc-page-wrapper .cc-offer-card .fk-col{padding:8px}
+.cc-page-wrapper .cc-offer-card .fk-image-defaults{width:100%;height:auto;max-width:100%;border-radius:10px}
+.cc-page-wrapper .cc-pair{display:flex;gap:8px}
+.cc-page-wrapper .cc-pair-item{flex:1;text-align:center;font-size:13px;color:var(--grey)}
+.cc-page-wrapper .cc-offer-card .fk-headline{font-size:28px;line-height:1.2;color:var(--navy);text-align:left;margin-top:4px}
+.cc-page-wrapper .cc-offer-card .cc-cl-text{font-size:18px;line-height:1.45;text-align:left;color:#333}
+.cc-page-wrapper .cc-offer-card .fk-bullet{font-size:17px;font-weight:600;padding:2px 0}
+.cc-page-wrapper .cc-offer-card .fk-bullet .fa-check-circle{color:var(--green)}
+.cc-page-wrapper .cc-price{font-variant-numeric:tabular-nums;font-feature-settings:"tnum";font-size:26px;font-weight:700;color:var(--navy);text-align:left}
+.cc-page-wrapper .cc-price .cc-strike{text-decoration:line-through;color:#8a8a8a;font-weight:400;font-size:20px;margin-right:8px}
+.cc-page-wrapper .cc-price .cc-tag{display:inline-block;background:var(--gold);color:#fff;font-size:13px;font-weight:700;padding:3px 8px;border-radius:4px;vertical-align:middle;margin-left:6px}
+.cc-page-wrapper .cc-reserve .cc-cl-text{text-align:center;font-size:15px;color:var(--grey)}
+.cc-page-wrapper .cc-reserve .countdown-digit{font-size:1.6rem;font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums}
+.cc-page-wrapper .cc-reserve .countdown-block{margin:0 3px;padding:4px}
+.cc-page-wrapper .cc-cl-div-box{box-sizing:border-box}
+.cc-page-wrapper .cc-reserve .countdown-cont>.countdown-block:nth-child(-n+4){display:none}
+.cc-page-wrapper .cc-reserve .countdown-label{font-size:11px;color:var(--grey);text-transform:uppercase}
+.cc-page-wrapper .cc-chargeline .cc-cl-text{text-align:center;font-size:17px;font-weight:700;color:var(--navy)}
+.cc-page-wrapper .cc-cta{text-align:center}
+.cc-page-wrapper .cc-cta .btn.btn-primary.btn-one-style{width:100%;max-width:560px;background:var(--green);border-color:var(--green);font-weight:700;padding-top:16px;padding-bottom:16px;box-shadow:0 4px 12px rgba(30,125,58,.35)}
+.cc-page-wrapper .cc-decline{text-align:center}
+.cc-page-wrapper .cc-decline .btn.btn-primary.btnStyle,.cc-page-wrapper .cc-decline .btn.btn-primary.btnStyle:hover{background:transparent;border:0;color:var(--grey);text-decoration:underline;font-size:14px;padding:4px 8px;margin:0 auto 6px;border-radius:0}
+.cc-page-wrapper .cc-fine .cc-cl-text{font-size:13px;color:var(--grey);text-align:center}
+.cc-page-wrapper .cc-lead .cc-cl-text{font-size:14px;color:var(--grey);font-style:italic}
+.cc-page-wrapper .cc-quote .cc-cl-text{border-left:4px solid var(--gold);padding:6px 12px;font-style:italic;color:var(--navy)}
+.cc-page-wrapper .cc-offer-hidden{max-height:0;overflow:hidden;opacity:0;visibility:hidden;animation:ccOfferReveal .6s ease forwards;animation-delay:var(--cc-cue,60s)}
+@keyframes ccOfferReveal{to{max-height:5000px;opacity:1;visibility:visible;overflow:visible}}
+.cc-page-wrapper .cc-ty{max-width:860px;margin:0 auto;padding:16px 12px 40px}
+.cc-page-wrapper .cc-ty .cc-panel{border:1px solid #eadfca;border-radius:12px;background:#fff;padding:12px 16px;margin:14px 0}
+.cc-page-wrapper .cc-ty .cc-panel .fk-headline{font-size:20px;margin-top:4px;color:var(--navy)}
+.cc-page-wrapper .cc-ty .cc-cl-text{font-size:17px}
+.cc-page-wrapper .cc-ty .cc-cert .cc-cl-text{font-size:15px;color:var(--grey)}
+@media (max-width:768px){.cc-page-wrapper .cc-offer-card .fk-headline{font-size:23px}.cc-page-wrapper .cc-price{font-size:23px}.cc-page-wrapper .cc-wait .fk-headline{font-size:22px}}
+
+</style>
+</head>
+<body id="cc-id-JxeBj4zFFkTi">
+<div id="cc-id-H1oYzaOyRKyq" class="cc-page-wrapper"><div id="cc-id-IiVMOsW8ec2S" class="cc-topbar"><div id="cc-id-0r5R06QTWfH0" data-box="true" style="padding: 12px 10px; width: 100%;" class="cc-cl-div-box "><div id="cc-id-8r1bIGolep4c" data-text="text" class="cc-cl-text ">Do NOT close this window. Your order is processing.</div></div></div><div id="cc-id-t23gJHzhuCwc" class="cc-logo"><img id="cc-id-FxMxX1twRzrW" src="https://tanaorjewelry.com/cdn/shop/files/logo.png?height=55&v=1613753579" alt="Tanaor" class="fk-image-defaults"></div><div id="cc-id-pWZ7hg82h75s" class="cc-crumbs"><div id="cc-id-cCUuWkJy8PEf" data-box="true" style="padding: 12px 10px; width: 100%;" class="cc-cl-div-box "><div id="cc-id-peXunAMnHan5" data-text="text" class="cc-cl-text ">Checkout &rarr; <span id="cc-id-r7imPzhe6q3r" class="cc-current">Special Offers</span> &rarr; Order Receipt</div></div></div><div id="cc-id-KBT3ZLZoejW5" class="cc-wait"><div id="cc-id-96cuJScxEODm" class="fk-headline cc-headline-style ">Wait, your one-time offer is ready.</div></div><div id="cc-id-EvexvLly1kmK" class="cc-video-wrap"><div id="cc-id-P2gT5VxRgpbX" class="embed-responsive embed-responsive-16by9"><iframe id="cc-id-WNkY6GlSDymj" class="embed-responsive-item" src="https://player.vimeo.com/video/REPLACE_VIDEO_ID_BIBLEBOX" title="Offer video: biblebox" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div><div id="cc-id-ULXAESLrFa5b" class="cc-offer"><div id="cc-id-8MXf5UG9umJh" class="cc-offer-card"><div id="cc-id-VUCG1RN93Hxq" class="fk-row cc-cl-two-columns"><div id="cc-id-VeDSsptqzdhd" class="fk-col col" align="center"><img id="cc-id-vpntv7u9Q1H8" class="fk-image-defaults cc-cl-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+" title="70% of you are giving this as a gift" href="" onclick="" target="_self" alt="70% of you are giving this as a gift" align="center" width="600" height="600" /></div><div id="cc-id-74YupZsqRg4J" class="fk-col col" align="center"><div id="cc-id-YEvOoUbf0yBI" class="fk-headline cc-headline-style ">70% of you are giving this as a gift. Make the moment she opens it unforgettable.</div><div id="cc-id-gbdHB3MHKqUw" data-text="text" class="cc-cl-text ">The Tanaor Bible Box turns the jewelry you chose into a gift reveal she will remember.</div><div id="cc-id-cd4xP9QtdPj6" class="cc-quote"><div id="cc-id-I5g9VC9fMTPh" data-text="text" class="cc-cl-text ">&ldquo;She teared up when she opened it.&rdquo;</div></div><ul id="cc-id-mfaTMbLzIMHa" class="fk-bullet"><li id="cc-id-QeL0g0VLWXI2"><div id="cc-id-2zQJfDlIzlxh" class="fk-bullet-list-container"><div id="cc-id-JEtU9yIw62f4" class="fk-bullet-icon-container"><i id="cc-id-DywgiIpyn0i3" class="fas fa-check-circle"></i></div><div id="cc-id-8jCzJysxPa02"><div id="cc-id-BTEX2t0FR6nz">Gift-ready presentation</div></div></div></li><li id="cc-id-AZdDVNT7XV5i"><div id="cc-id-p3ugyu2h40mt" class="fk-bullet-list-container"><div id="cc-id-ZXFYx3wpjGGZ" class="fk-bullet-icon-container"><i id="cc-id-nUgw8NCX3GCb" class="fas fa-check-circle"></i></div><div id="cc-id-ZMur1izStjRV"><div id="cc-id-0qb6NuWKR2EX">Makes the reveal unforgettable</div></div></div></li><li id="cc-id-L7WqugeI4Q38"><div id="cc-id-gnTnmFXThwz3" class="fk-bullet-list-container"><div id="cc-id-H81uY7mvuy5X" class="fk-bullet-icon-container"><i id="cc-id-QK8Dpe17OZlx" class="fas fa-check-circle"></i></div><div id="cc-id-KOZCvaf77yU2"><div id="cc-id-2Mt1qFI0wtqP">Available only on this page</div></div></div></li></ul><div id="cc-id-g4USb2HiZXyv" class="cc-price"><span id="cc-id-fp3M7Tvw3Zws" class="cc-strike">$20.00</span>$9.99<span id="cc-id-215nP7RtyCgz" class="cc-tag">50% OFF</span></div><div id="cc-id-hc6XfW8LMr7T" class="cc-reserve"><div id="cc-id-xAvCxitimMtf" data-text="text" class="cc-cl-text ">Your one-time price is reserved for</div><div id="cc-id-3JX1UgLBxrNK" timertype="minute" class="countdown fk-countdown cc-cl-minute-countdown" endtext="EXPIRED" align="center" hours="0" minutes="5" seconds="0"><span data-js="countdown" class="countdown-cont" id="countdownCont"><div id="cc-id-IzgeBWUX9f4T" class="countdown-block"><div id="cc-id-hB4J6lkhAoZB" data-js="countdown-day" class="countdown-digit">00</div><div id="cc-id-NrUxUV7oVd6N" class="countdown-label">Days</div></div><div id="cc-id-mKFuYAMkBrSv" class="countdown-block colon"><div id="cc-id-mzDJek2za9pr"><b id="cc-id-Rkze0jqtVOHU">:</b></div><div id="cc-id-q1FxhXnWW8J2" class="countdown-label hidelabel">:</div></div><div id="cc-id-BxVBpFMt0upQ" class="countdown-block"><div id="cc-id-SSXuu0qAMFGE" data-js="countdown-hour" class="countdown-digit">00</div><div id="cc-id-R1SkACsDhjyQ" class="countdown-label">Hours</div></div><div id="cc-id-Zo1TWijsZc8R" class="countdown-block colon"><div id="cc-id-OhVjAvDOIEAl"><b id="cc-id-qfqnG1REykK7">:</b></div><div id="cc-id-LxEPR9oc9J82" class="countdown-label hidelabel">:</div></div><div id="cc-id-C80N4fNIy16l" class="countdown-block"><div id="cc-id-594BPDjIxDtX" data-js="countdown-minute" class="countdown-digit">00</div><div id="cc-id-XHKApjIAqum8" class="countdown-label">Minutes</div></div><div id="cc-id-gEJCsAzzBz7m" class="countdown-block colon"><div id="cc-id-2vc2epvF37mT"><b id="cc-id-wu9mJx6frjkF">:</b></div><div id="cc-id-cqHu1sH9fhjr" class="countdown-label hidelabel">:</div></div><div id="cc-id-rX6eHWjdPpWj" class="countdown-block"><div id="cc-id-4Ec4Saq8lOdC" data-js="countdown-second" class="countdown-digit">00</div><div id="cc-id-EjNo4JATKV6w" class="countdown-label">Seconds</div></div></span><span id="cc-id-yWyaU0ZYnFUF" data-js="countdown-endtext" class="countdown-endtext"></span></div></div><div id="cc-id-nZOvtJ8GbsZl" class="cc-chargeline"><div id="cc-id-E4WFH9LM6DPm" data-text="text" class="cc-cl-text ">Yes, add the Bible Box: one-time charge of $9.99</div></div><div id="cc-id-yQ29RkyjHghf" class="cc-cta"><button id="cc-id-ArETn6os31HP" class="btn btn-primary btn-one-style" action="submit" onclick="callMethod(event)">Complete Checkout</button></div><div id="cc-id-1N0HkwzQclfK" class="cc-decline"><button id="cc-id-aaBYjsaKjcyU" class="btn btn-primary btnStyle" action="route" onclick="route(event)">No thanks, take me to my receipt</button></div><div id="cc-id-EIYV0krUfIjM" class="cc-fine"><div id="cc-id-KpJSXcvQPkpo" data-text="text" class="cc-cl-text ">One click. Your card on file is charged. No re-entering payment.</div></div></div></div></div></div></div>
+</body>
+</html>

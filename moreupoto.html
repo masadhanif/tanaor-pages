@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Give one | Tanaor</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+.cc-cl-text {
+  padding: 1px;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+</style>
+<style>
+.cc-headline-style {
+  font-size: 32px;
+  font-family: Helvetica, serif;
+  font-weight: 700;
+  margin-top: 15px;
+}
+</style>
+<style>
+.fk-image-defaults {
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+}
+
+.cc-cl-image {
+  color: black;
+}
+</style>
+<style>
+.fk-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 1px;
+  height: auto;
+  max-width: 100%;
+}
+
+.fk-col {
+  min-height: 25px;
+  padding: 1px;
+  flex-grow: 1;
+  width: min-content;
+}
+
+@media (max-width: 768px) {
+  .fk-row {
+    flex-wrap: wrap;
+  }
+  .fk-col {
+    flex-basis: 100%;
+    display: block;
+  }
+}
+</style>
+<style>
+.fk-bullet {
+  padding: 2px 15px 2px 15px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.fk-bullet-span {
+  color: red;
+}
+
+.fk-bullet-list-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.fk-bullet-icon-container {
+  padding: 5px 10px 5px 5px;
+}
+</style>
+<style>
+.countdown {
+  text-align: center;
+  font-family: Helvetica, serif;
+}
+
+.countdown-cont {
+  display: inline-table;
+}
+
+.countdown-block {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.colon {
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.countdown-digit {
+  font-size: 1rem;
+}
+
+.hidelabel {
+  visibility: hidden;
+}
+</style>
+<style>
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 20px auto;
+  white-space: normal;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  white-space: normal;
+}
+.btn.btn-primary.btn-one-style:active:focus {
+  box-shadow: none;
+}
+.btn.btn-primary.btn-one-style:focus {
+  box-shadow: none;
+}
+</style>
+<style>
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 20px auto;
+  white-space: normal;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary.btnStyle:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  white-space: normal;
+}
+.btn.btn-primary.btnStyle {
+  background: #f4f4f4;
+  color: #007bff;
+  border-color: #007bff;
+  border-radius: 30px;
+  border-width: 3px;
+  padding: 6px 20px;
+  white-space: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary.btnStyle:active:focus {
+  box-shadow: none;
+}
+.btn.btn-primary.btnStyle:focus {
+  box-shadow: none;
+}
+</style>
+<style>
+
+.cc-page-wrapper{--navy:#14213d;--gold:#b8893b;--cream:#faf6ee;--green:#1e7d3a;--grey:#6b6b6b;background:#fff;color:#222;font-family:Helvetica,Arial,sans-serif;min-height:100vh}
+.cc-page-wrapper .cc-topbar{background:var(--navy);padding:0;margin:0}
+.cc-page-wrapper .cc-topbar .cc-cl-text{color:#fff;font-size:15px;font-weight:700;text-align:center;padding:10px 12px;letter-spacing:.2px}
+.cc-page-wrapper .cc-logo{text-align:center;padding:12px 0 4px;background:#fff}.cc-page-wrapper .cc-logo img{height:55px;width:auto;max-width:60%}
+.cc-page-wrapper .cc-crumbs{background:var(--cream);border-bottom:1px solid #eadfca;padding:0}
+.cc-page-wrapper .cc-crumbs .cc-cl-text{font-size:14px;text-align:center;color:var(--grey);padding:10px 8px}
+.cc-page-wrapper .cc-crumbs .cc-current{color:var(--navy);font-weight:700}
+.cc-page-wrapper .cc-wait{max-width:820px;margin:0 auto;padding:0 12px}
+.cc-page-wrapper .cc-wait .fk-headline{font-size:26px;text-align:center;color:var(--navy);margin-top:22px}
+.cc-page-wrapper .cc-video-wrap{max-width:820px;margin:8px auto 0;padding:0 12px}
+.cc-page-wrapper .cc-video-wrap .embed-responsive{border-radius:10px;overflow:hidden;background:#111;box-shadow:0 6px 22px rgba(20,33,61,.25)}
+.cc-page-wrapper .cc-video-note{font-size:14px;color:var(--grey);text-align:center;padding:8px 0}
+.cc-page-wrapper .cc-offer{max-width:980px;margin:0 auto;padding:6px 12px 30px}
+.cc-page-wrapper .cc-offer-card{border:2px solid var(--gold);border-radius:14px;background:#fff;padding:14px;box-shadow:0 8px 28px rgba(20,33,61,.12)}
+.cc-page-wrapper .cc-offer-card .fk-row{align-items:center}
+.cc-page-wrapper .cc-offer-card .fk-col{padding:8px}
+.cc-page-wrapper .cc-offer-card .fk-image-defaults{width:100%;height:auto;max-width:100%;border-radius:10px}
+.cc-page-wrapper .cc-pair{display:flex;gap:8px}
+.cc-page-wrapper .cc-pair-item{flex:1;text-align:center;font-size:13px;color:var(--grey)}
+.cc-page-wrapper .cc-offer-card .fk-headline{font-size:28px;line-height:1.2;color:var(--navy);text-align:left;margin-top:4px}
+.cc-page-wrapper .cc-offer-card .cc-cl-text{font-size:18px;line-height:1.45;text-align:left;color:#333}
+.cc-page-wrapper .cc-offer-card .fk-bullet{font-size:17px;font-weight:600;padding:2px 0}
+.cc-page-wrapper .cc-offer-card .fk-bullet .fa-check-circle{color:var(--green)}
+.cc-page-wrapper .cc-price{font-variant-numeric:tabular-nums;font-feature-settings:"tnum";font-size:26px;font-weight:700;color:var(--navy);text-align:left}
+.cc-page-wrapper .cc-price .cc-strike{text-decoration:line-through;color:#8a8a8a;font-weight:400;font-size:20px;margin-right:8px}
+.cc-page-wrapper .cc-price .cc-tag{display:inline-block;background:var(--gold);color:#fff;font-size:13px;font-weight:700;padding:3px 8px;border-radius:4px;vertical-align:middle;margin-left:6px}
+.cc-page-wrapper .cc-reserve .cc-cl-text{text-align:center;font-size:15px;color:var(--grey)}
+.cc-page-wrapper .cc-reserve .countdown-digit{font-size:1.6rem;font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums}
+.cc-page-wrapper .cc-reserve .countdown-block{margin:0 3px;padding:4px}
+.cc-page-wrapper .cc-cl-div-box{box-sizing:border-box}
+.cc-page-wrapper .cc-reserve .countdown-cont>.countdown-block:nth-child(-n+4){display:none}
+.cc-page-wrapper .cc-reserve .countdown-label{font-size:11px;color:var(--grey);text-transform:uppercase}
+.cc-page-wrapper .cc-chargeline .cc-cl-text{text-align:center;font-size:17px;font-weight:700;color:var(--navy)}
+.cc-page-wrapper .cc-cta{text-align:center}
+.cc-page-wrapper .cc-cta .btn.btn-primary.btn-one-style{width:100%;max-width:560px;background:var(--green);border-color:var(--green);font-weight:700;padding-top:16px;padding-bottom:16px;box-shadow:0 4px 12px rgba(30,125,58,.35)}
+.cc-page-wrapper .cc-decline{text-align:center}
+.cc-page-wrapper .cc-decline .btn.btn-primary.btnStyle,.cc-page-wrapper .cc-decline .btn.btn-primary.btnStyle:hover{background:transparent;border:0;color:var(--grey);text-decoration:underline;font-size:14px;padding:4px 8px;margin:0 auto 6px;border-radius:0}
+.cc-page-wrapper .cc-fine .cc-cl-text{font-size:13px;color:var(--grey);text-align:center}
+.cc-page-wrapper .cc-lead .cc-cl-text{font-size:14px;color:var(--grey);font-style:italic}
+.cc-page-wrapper .cc-quote .cc-cl-text{border-left:4px solid var(--gold);padding:6px 12px;font-style:italic;color:var(--navy)}
+.cc-page-wrapper .cc-offer-hidden{max-height:0;overflow:hidden;opacity:0;visibility:hidden;animation:ccOfferReveal .6s ease forwards;animation-delay:var(--cc-cue,60s)}
+@keyframes ccOfferReveal{to{max-height:5000px;opacity:1;visibility:visible;overflow:visible}}
+.cc-page-wrapper .cc-ty{max-width:860px;margin:0 auto;padding:16px 12px 40px}
+.cc-page-wrapper .cc-ty .cc-panel{border:1px solid #eadfca;border-radius:12px;background:#fff;padding:12px 16px;margin:14px 0}
+.cc-page-wrapper .cc-ty .cc-panel .fk-headline{font-size:20px;margin-top:4px;color:var(--navy)}
+.cc-page-wrapper .cc-ty .cc-cl-text{font-size:17px}
+.cc-page-wrapper .cc-ty .cc-cert .cc-cl-text{font-size:15px;color:var(--grey)}
+@media (max-width:768px){.cc-page-wrapper .cc-offer-card .fk-headline{font-size:23px}.cc-page-wrapper .cc-price{font-size:23px}.cc-page-wrapper .cc-wait .fk-headline{font-size:22px}}
+
+</style>
+</head>
+<body id="cc-id-PMrhRCkT2xCc">
+<div id="cc-id-3Y4gbZcuzxZ3" class="cc-page-wrapper"><div id="cc-id-AZ1urdlxX1fu" class="cc-topbar"><div id="cc-id-pBkTXQLX5hRm" data-box="true" style="padding: 12px 10px; width: 100%;" class="cc-cl-div-box "><div id="cc-id-q7RpWkwHa2GF" data-text="text" class="cc-cl-text ">Do NOT close this window. Your order is processing.</div></div></div><div id="cc-id-rrhIxPkkCM7e" class="cc-logo"><img id="cc-id-vZ2H7ZpE5fwe" src="https://tanaorjewelry.com/cdn/shop/files/logo.png?height=55&v=1613753579" alt="Tanaor" class="fk-image-defaults"></div><div id="cc-id-HrzdgYsxHQV4" class="cc-crumbs"><div id="cc-id-rbLHJDM1tT4o" data-box="true" style="padding: 12px 10px; width: 100%;" class="cc-cl-div-box "><div id="cc-id-spIi5M6Yz16h" data-text="text" class="cc-cl-text ">Checkout &rarr; <span id="cc-id-rLSI3l6dAlrV" class="cc-current">Special Offers</span> &rarr; Order Receipt</div></div></div><div id="cc-id-wAmuoK4aWqvT" class="cc-wait"><div id="cc-id-FYRfdQNYDBdE" class="fk-headline cc-headline-style ">Wait, your one-time offer is ready.</div></div><div id="cc-id-y7w4kCXRi5Fp" class="cc-offer"><div id="cc-id-feiYMrMGUHJ5" class="cc-offer-card"><div id="cc-id-14BvSAp0YYDW" class="fk-row cc-cl-two-columns"><div id="cc-id-4Jt30hZzAjHA" class="fk-col col" align="center"><img id="cc-id-23Renxwldu4m" class="fk-image-defaults cc-cl-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+" title="Give one" href="" onclick="" target="_self" alt="Give one" align="center" width="600" height="600" /></div><div id="cc-id-Yn5fCkOCPmMm" class="fk-col col" align="center"><div id="cc-id-1FwhAmvfj6wI" class="fk-headline cc-headline-style ">Give one. 70% of our customers buy this as a gift.</div><div id="cc-id-3t24XhX4Oich" data-text="text" class="cc-cl-text ">A second Sacred Cross Necklace, the exact piece and color you just chose, at half the compare-at price.</div><ul id="cc-id-gFuIH0r0Ffhu" class="fk-bullet"><li id="cc-id-0YUPHI2P4d46"><div id="cc-id-s5zF8qGQPnSc" class="fk-bullet-list-container"><div id="cc-id-ISBbyCcgC6eC" class="fk-bullet-icon-container"><i id="cc-id-cqsvKwuxgXA3" class="fas fa-check-circle"></i></div><div id="cc-id-h2ARfdg3tDAN"><div id="cc-id-U9CN9vr3IaEo">Exact same design and color</div></div></div></li><li id="cc-id-261bnWffLuoZ"><div id="cc-id-t1EpXydJI0Ri" class="fk-bullet-list-container"><div id="cc-id-4bIXjsYm1lLm" class="fk-bullet-icon-container"><i id="cc-id-MaMbrsnukgPB" class="fas fa-check-circle"></i></div><div id="cc-id-ESE3l1b9YUAF"><div id="cc-id-H89Q8SPupiJ5">Certificate of authenticity</div></div></div></li><li id="cc-id-9Lvs9WLfoeXD"><div id="cc-id-TlSNnRDexgtb" class="fk-bullet-list-container"><div id="cc-id-0nBMDKtGfXS2" class="fk-bullet-icon-container"><i id="cc-id-Qybu2tbAMBsW" class="fas fa-check-circle"></i></div><div id="cc-id-x0wsitaFrPlL"><div id="cc-id-fcaVY1bd8CT5">This price does not exist anywhere on the site</div></div></div></li></ul><div id="cc-id-cp6bod8ZEesH" class="cc-price"><span id="cc-id-LY1hd8OgNiWh" class="cc-strike">$305</span>$152<span id="cc-id-D5ybua4Q6nvb" class="cc-tag">50% OFF</span></div><div id="cc-id-WU7lN5NLySTl" class="cc-reserve"><div id="cc-id-lGSQxJUXSwKZ" data-text="text" class="cc-cl-text ">Your one-time price is reserved for</div><div id="cc-id-fA0DasweYR7o" timertype="minute" class="countdown fk-countdown cc-cl-minute-countdown" endtext="EXPIRED" align="center" hours="0" minutes="5" seconds="0"><span data-js="countdown" class="countdown-cont" id="countdownCont"><div id="cc-id-347jq9ut0fYK" class="countdown-block"><div id="cc-id-d9vZ3zv6irdv" data-js="countdown-day" class="countdown-digit">00</div><div id="cc-id-qoWMAjt5QNV8" class="countdown-label">Days</div></div><div id="cc-id-nKeN6LSMfxpZ" class="countdown-block colon"><div id="cc-id-OLHbTYQ7WbP3"><b id="cc-id-6wWulAmkJMOv">:</b></div><div id="cc-id-a3YjBY39Co98" class="countdown-label hidelabel">:</div></div><div id="cc-id-wN9WtO1hZ72r" class="countdown-block"><div id="cc-id-8HyywlU1x2yJ" data-js="countdown-hour" class="countdown-digit">00</div><div id="cc-id-yUtaIrFOYiVE" class="countdown-label">Hours</div></div><div id="cc-id-ULeyR3d6313n" class="countdown-block colon"><div id="cc-id-ZzE3Fi7HNZCq"><b id="cc-id-ZvQVQhGjASH4">:</b></div><div id="cc-id-qOfzzUYJXhAI" class="countdown-label hidelabel">:</div></div><div id="cc-id-d5kpzx5Ac6iI" class="countdown-block"><div id="cc-id-jMXpsZEwqWEa" data-js="countdown-minute" class="countdown-digit">00</div><div id="cc-id-7lS69LTETTBB" class="countdown-label">Minutes</div></div><div id="cc-id-SQMmN4Ewb6SZ" class="countdown-block colon"><div id="cc-id-8jznQvHeLKKS"><b id="cc-id-Fc3j9j3b8Sa6">:</b></div><div id="cc-id-XmXn1CNBqc9u" class="countdown-label hidelabel">:</div></div><div id="cc-id-oPJ5vgw3ZAFU" class="countdown-block"><div id="cc-id-cMyZzpqsEg7W" data-js="countdown-second" class="countdown-digit">00</div><div id="cc-id-dfVBSsWfD5Rr" class="countdown-label">Seconds</div></div></span><span id="cc-id-ZlRYP9jZqzNQ" data-js="countdown-endtext" class="countdown-endtext"></span></div></div><div id="cc-id-soP7zo8XsnBo" class="cc-chargeline"><div id="cc-id-3fXBKgT3YjCa" data-text="text" class="cc-cl-text ">Yes, add a second one: one-time charge of $152</div></div><div id="cc-id-0UnCDA1soP1K" class="cc-cta"><button id="cc-id-I7v1D1Q3myAF" class="btn btn-primary btn-one-style" action="submit" onclick="callMethod(event)">Complete Checkout</button></div><div id="cc-id-ayJQ6GVl9NmJ" class="cc-decline"><button id="cc-id-bTJSSW500CzM" class="btn btn-primary btnStyle" action="route" onclick="route(event)">No thanks, one is enough for now</button></div><div id="cc-id-A2WiVkQkPTlD" class="cc-fine"><div id="cc-id-S7jq5ysSvJi1" data-text="text" class="cc-cl-text ">One click. Your card on file is charged. No re-entering payment.</div></div></div></div></div></div></div>
+</body>
+</html>

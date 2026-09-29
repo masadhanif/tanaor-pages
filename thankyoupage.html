@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order confirmation | Tanaor</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+.cc-cl-text {
+  padding: 1px;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+</style>
+<style>
+.cc-headline-style {
+  font-size: 32px;
+  font-family: Helvetica, serif;
+  font-weight: 700;
+  margin-top: 15px;
+}
+</style>
+<style>
+.fk-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 1px;
+  height: auto;
+  max-width: 100%;
+}
+
+.fk-col {
+  min-height: 25px;
+  padding: 1px;
+  flex-grow: 1;
+  width: min-content;
+}
+
+@media (max-width: 768px) {
+  .fk-row {
+    flex-wrap: wrap;
+  }
+  .fk-col {
+    flex-basis: 100%;
+    display: block;
+  }
+}
+</style>
+<style>
+.heading-main {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-of-items {
+  padding: 15px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.header-align {
+  padding: 10px 0px;
+}
+
+.div-border {
+  border: 1px solid #277098;
+  border-radius: 10px;
+}
+
+.row-style {
+  background: #277098;
+  color: #fff;
+}
+
+.row-padding {
+  padding: 8px;
+}
+
+.fk-text-right {
+  text-align: right;
+}
+
+.total-prices {
+  margin-top: 15px;
+  padding-top: 15px;
+  text-align: right;
+  border-top: 1px solid #277098;
+}
+
+.total-prices .each-price label {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+</style>
+<style>
+
+.cc-page-wrapper{--navy:#14213d;--gold:#b8893b;--cream:#faf6ee;--green:#1e7d3a;--grey:#6b6b6b;background:#fff;color:#222;font-family:Helvetica,Arial,sans-serif;min-height:100vh}
+.cc-page-wrapper .cc-topbar{background:var(--navy);padding:0;margin:0}
+.cc-page-wrapper .cc-topbar .cc-cl-text{color:#fff;font-size:15px;font-weight:700;text-align:center;padding:10px 12px;letter-spacing:.2px}
+.cc-page-wrapper .cc-logo{text-align:center;padding:12px 0 4px;background:#fff}.cc-page-wrapper .cc-logo img{height:55px;width:auto;max-width:60%}
+.cc-page-wrapper .cc-crumbs{background:var(--cream);border-bottom:1px solid #eadfca;padding:0}
+.cc-page-wrapper .cc-crumbs .cc-cl-text{font-size:14px;text-align:center;color:var(--grey);padding:10px 8px}
+.cc-page-wrapper .cc-crumbs .cc-current{color:var(--navy);font-weight:700}
+.cc-page-wrapper .cc-wait{max-width:820px;margin:0 auto;padding:0 12px}
+.cc-page-wrapper .cc-wait .fk-headline{font-size:26px;text-align:center;color:var(--navy);margin-top:22px}
+.cc-page-wrapper .cc-video-wrap{max-width:820px;margin:8px auto 0;padding:0 12px}
+.cc-page-wrapper .cc-video-wrap .embed-responsive{border-radius:10px;overflow:hidden;background:#111;box-shadow:0 6px 22px rgba(20,33,61,.25)}
+.cc-page-wrapper .cc-video-note{font-size:14px;color:var(--grey);text-align:center;padding:8px 0}
+.cc-page-wrapper .cc-offer{max-width:980px;margin:0 auto;padding:6px 12px 30px}
+.cc-page-wrapper .cc-offer-card{border:2px solid var(--gold);border-radius:14px;background:#fff;padding:14px;box-shadow:0 8px 28px rgba(20,33,61,.12)}
+.cc-page-wrapper .cc-offer-card .fk-row{align-items:center}
+.cc-page-wrapper .cc-offer-card .fk-col{padding:8px}
+.cc-page-wrapper .cc-offer-card .fk-image-defaults{width:100%;height:auto;max-width:100%;border-radius:10px}
+.cc-page-wrapper .cc-pair{display:flex;gap:8px}
+.cc-page-wrapper .cc-pair-item{flex:1;text-align:center;font-size:13px;color:var(--grey)}
+.cc-page-wrapper .cc-offer-card .fk-headline{font-size:28px;line-height:1.2;color:var(--navy);text-align:left;margin-top:4px}
+.cc-page-wrapper .cc-offer-card .cc-cl-text{font-size:18px;line-height:1.45;text-align:left;color:#333}
+.cc-page-wrapper .cc-offer-card .fk-bullet{font-size:17px;font-weight:600;padding:2px 0}
+.cc-page-wrapper .cc-offer-card .fk-bullet .fa-check-circle{color:var(--green)}
+.cc-page-wrapper .cc-price{font-variant-numeric:tabular-nums;font-feature-settings:"tnum";font-size:26px;font-weight:700;color:var(--navy);text-align:left}
+.cc-page-wrapper .cc-price .cc-strike{text-decoration:line-through;color:#8a8a8a;font-weight:400;font-size:20px;margin-right:8px}
+.cc-page-wrapper .cc-price .cc-tag{display:inline-block;background:var(--gold);color:#fff;font-size:13px;font-weight:700;padding:3px 8px;border-radius:4px;vertical-align:middle;margin-left:6px}
+.cc-page-wrapper .cc-reserve .cc-cl-text{text-align:center;font-size:15px;color:var(--grey)}
+.cc-page-wrapper .cc-reserve .countdown-digit{font-size:1.6rem;font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums}
+.cc-page-wrapper .cc-reserve .countdown-block{margin:0 3px;padding:4px}
+.cc-page-wrapper .cc-cl-div-box{box-sizing:border-box}
+.cc-page-wrapper .cc-reserve .countdown-cont>.countdown-block:nth-child(-n+4){display:none}
+.cc-page-wrapper .cc-reserve .countdown-label{font-size:11px;color:var(--grey);text-transform:uppercase}
+.cc-page-wrapper .cc-chargeline .cc-cl-text{text-align:center;font-size:17px;font-weight:700;color:var(--navy)}
+.cc-page-wrapper .cc-cta{text-align:center}
+.cc-page-wrapper .cc-cta .btn.btn-primary.btn-one-style{width:100%;max-width:560px;background:var(--green);border-color:var(--green);font-weight:700;padding-top:16px;padding-bottom:16px;box-shadow:0 4px 12px rgba(30,125,58,.35)}
+.cc-page-wrapper .cc-decline{text-align:center}
+.cc-page-wrapper .cc-decline .btn.btn-primary.btnStyle,.cc-page-wrapper .cc-decline .btn.btn-primary.btnStyle:hover{background:transparent;border:0;color:var(--grey);text-decoration:underline;font-size:14px;padding:4px 8px;margin:0 auto 6px;border-radius:0}
+.cc-page-wrapper .cc-fine .cc-cl-text{font-size:13px;color:var(--grey);text-align:center}
+.cc-page-wrapper .cc-lead .cc-cl-text{font-size:14px;color:var(--grey);font-style:italic}
+.cc-page-wrapper .cc-quote .cc-cl-text{border-left:4px solid var(--gold);padding:6px 12px;font-style:italic;color:var(--navy)}
+.cc-page-wrapper .cc-offer-hidden{max-height:0;overflow:hidden;opacity:0;visibility:hidden;animation:ccOfferReveal .6s ease forwards;animation-delay:var(--cc-cue,60s)}
+@keyframes ccOfferReveal{to{max-height:5000px;opacity:1;visibility:visible;overflow:visible}}
+.cc-page-wrapper .cc-ty{max-width:860px;margin:0 auto;padding:16px 12px 40px}
+.cc-page-wrapper .cc-ty .cc-panel{border:1px solid #eadfca;border-radius:12px;background:#fff;padding:12px 16px;margin:14px 0}
+.cc-page-wrapper .cc-ty .cc-panel .fk-headline{font-size:20px;margin-top:4px;color:var(--navy)}
+.cc-page-wrapper .cc-ty .cc-cl-text{font-size:17px}
+.cc-page-wrapper .cc-ty .cc-cert .cc-cl-text{font-size:15px;color:var(--grey)}
+@media (max-width:768px){.cc-page-wrapper .cc-offer-card .fk-headline{font-size:23px}.cc-page-wrapper .cc-price{font-size:23px}.cc-page-wrapper .cc-wait .fk-headline{font-size:22px}}
+
+</style>
+</head>
+<body id="cc-id-XgTVOtlIrvOC">
+<div id="cc-id-mbVXvCOOCF6d" class="cc-page-wrapper"><div id="cc-id-Td60waNm8fpE" class="cc-topbar"><div id="cc-id-kCoaYNUPoOhE" data-box="true" style="padding: 12px 10px; width: 100%;" class="cc-cl-div-box "><div id="cc-id-1g6qLUJ8tJf4" data-text="text" class="cc-cl-text ">Your order is confirmed.</div></div></div><div id="cc-id-KME4ZmAIWiC8" class="cc-logo"><img id="cc-id-uakF5loIirus" src="https://tanaorjewelry.com/cdn/shop/files/logo.png?height=55&v=1613753579" alt="Tanaor" class="fk-image-defaults"></div><div id="cc-id-oqDZaMSwQLU1" class="cc-crumbs"><div id="cc-id-Td6Ofzl0AbiY" data-box="true" style="padding: 12px 10px; width: 100%;" class="cc-cl-div-box "><div id="cc-id-cXSq3gcqV7De" data-text="text" class="cc-cl-text ">Checkout &rarr; Special Offers &rarr; <span id="cc-id-WCYb0z1GCV7f" class="cc-current">Order Receipt</span></div></div></div><div id="cc-id-sE6427NkReGF" class="cc-ty"><div id="cc-id-SWnIThjiMBB5" class="cc-panel"><div id="cc-id-sm2LU6f3MuXP" class="fk-headline cc-headline-style ">Thank you, {{firstName}} {{lastName}}</div><div id="cc-id-KuMeEOaAMq0M" data-text="text" class="cc-cl-text ">Order ID: {{orderId}}</div></div><div id="cc-id-HZIPxKzLiOGI" class="cc-panel"><form id="cc-id-VmHx14RGjQxa" class="form cc-cl-invoice1"><h1 id="cc-id-ZM3QXoBFntgF" class="heading-main text-center">Thank you for your Order!</h1><p id="cc-id-9G309Yc4dCOd">Your order is confirmed and every item you accepted is included in this single order.</p><div id="cc-id-3EjYKXING5Tr" class="list-of-items p-2 div-border fk-element-container"><table id="fk-invoice-table" class="full-width"><thead id="cc-id-HQP1G3Ohe2Yc"><tr id="cc-id-9UrV1B47vvPF" class="row-style"><th id="cc-id-9svC7nwShWyw" colspan="3" class="row-padding">Items Ordered</th></tr><tr id="cc-id-2yMv57k2dQrB"><th id="cc-id-dxINfymdZqBt" class="header-align">Item</th><th id="cc-id-bW2Y0MIhZJsQ" class="header-align text-center">Quantity</th><th id="cc-id-fEeJ54B0t3uc" class="header-align fk-text-right">Price</th></tr></thead><tbody id="items-list"><tr id="fk-dynamic-invoice-row"><td id="cc-id-u6k4sRZ4MlOM" title="Item" class="table-cell table-text">Sample cell</td><td id="cc-id-4ZuOVhASO9vB" title="Quantity" class="text-center table-text">1</td><td id="cc-id-kYYq9opopjtU" title="Price" class="fk-text-right">$0.00</td></tr><tr id="cc-id-O6tUb9wWLhaQ"><td id="cc-id-TXwRQmVhLs1g" class="cell"></td></tr><tr id="fk-dynamic-invoice-price-row"><td id="cc-id-rH8QQ4NnuaIp" colspan="3"><div id="cc-id-GyKN4le9jGYu" class="total-prices"><div id="cc-id-1XButgqM7XbN" class="each-price"><label id="cc-id-3R3pmTyq86OZ">Sub Total:</label><span id="subTotal"> $0.00</span></div><div id="cc-id-CdeoYHXGSC0A" class="each-price"><label id="cc-id-Av9wTBSQX0cd">Shipping:</label><span id="sAndHFee"> $0.00</span></div><div id="cc-id-jrrq91v6i6aW" class="each-price"><label id="cc-id-aE9h7uTlRk7C">Sales Tax: </label><span id="tax"> $0.00</span></div><div id="cc-id-279067t6uPjp" class="each-price"><label id="cc-id-13Ba7n69ye4T">Discount: </label><span id="discount"> $0.00</span></div><div id="cc-id-3WYFpmapYyoI" class="each-price"><label id="cc-id-oOg0Ft593AaN">Grand Total: </label><span id="grandTotal"> $0.00</span></div></div></td></tr></tbody></table></div></form></div><div id="cc-id-xJ2ldJdlpHlz" class="cc-panel"><div id="cc-id-A1aL6Mgv9DnF" class="fk-headline cc-headline-style ">Contact Information</div><div id="cc-id-mXZ4lWutBKzJ" data-text="text" class="cc-cl-text ">{{emailAddress}}</div></div><div id="cc-id-nwUFBBaZYPEQ" class="cc-panel"><div id="cc-id-WlySxLvJ5fAe" class="fk-headline cc-headline-style ">Shipping Address</div><div id="cc-id-NXdwZTxxGR6a" data-text="text" class="cc-cl-text ">{{shipFirstName}} {{shipLastName}}</div><div id="cc-id-7YRqTPVNe59z" data-text="text" class="cc-cl-text ">{{shipAddress1}}</div><div id="cc-id-awbihqQzqRa7" data-text="text" class="cc-cl-text ">{{shipCity}}, {{shipState}} {{shipPostalCode}}</div><div id="cc-id-Xw8Igwdkqmm2" data-text="text" class="cc-cl-text ">{{shipCountry}}</div></div><div id="cc-id-cmEYmkQQHl7i" class="cc-panel"><div id="cc-id-mvf6ZA8vk9hy" class="fk-headline cc-headline-style ">Shipping Method</div><div id="cc-id-OXikLk4XX3ft" data-text="text" class="cc-cl-text ">{{shipMethod}}</div></div><div id="cc-id-kA0Y51lSq5MY" class="cc-panel"><div id="cc-id-bYyrQadkxqZ1" class="fk-headline cc-headline-style ">Billing Address</div><div id="cc-id-LWp2SzQmVoAa" data-text="text" class="cc-cl-text ">{{firstName}} {{lastName}}</div><div id="cc-id-srgzh8R8oAh3" data-text="text" class="cc-cl-text ">{{address1}}</div><div id="cc-id-N4XqZnvXH55z" data-text="text" class="cc-cl-text ">{{city}}, {{state}} {{postalCode}}</div><div id="cc-id-KSHYexQX8AAK" data-text="text" class="cc-cl-text ">{{country}}</div></div><div id="cc-id-Z9zZie2bt2eD" class="cc-panel"><div id="cc-id-8bRsLtjs0dau" class="fk-headline cc-headline-style ">Payment</div><div id="cc-id-ii3sQCnVALtP" data-text="text" class="cc-cl-text ">Total paid: {{currencySymbol}}{{amountPaid}}</div><div id="cc-id-5NDGr59Cs9Xx" data-text="text" class="cc-cl-text ">The charge will appear as TANAOR.</div></div><div id="cc-id-m1BNxtJf7Lq5" class="cc-panel cc-cert"><div id="cc-id-wI6rUWzNEZmj" data-text="text" class="cc-cl-text ">Every piece ships with a certificate of authenticity from the US Nano-Science Center.</div></div><div id="cc-id-koZYAZ6Dqi24" class="cc-panel"><div id="cc-id-yqlBB4lLRlwG" data-cc-type="map" address="" maptype="q" zoom="1" style="height: 350px; width: 615px; max-width: 100%;" class="cc-cl-map"><iframe src="https://maps.google.com/maps?&q=&z=1&t=q&output=embed" id="cc-id-1hfsni99hfwl" style="width: 100%; height: 100%;"></iframe></div></div></div></div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two hearts, one Word | Tanaor</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+.cc-cl-text {
+  padding: 1px;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+</style>
+<style>
+.cc-headline-style {
+  font-size: 32px;
+  font-family: Helvetica, serif;
+  font-weight: 700;
+  margin-top: 15px;
+}
+</style>
+<style>
+.fk-image-defaults {
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+}
+
+.cc-cl-image {
+  color: black;
+}
+</style>
+<style>
+.fk-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 1px;
+  height: auto;
+  max-width: 100%;
+}
+
+.fk-col {
+  min-height: 25px;
+  padding: 1px;
+  flex-grow: 1;
+  width: min-content;
+}
+
+@media (max-width: 768px) {
+  .fk-row {
+    flex-wrap: wrap;
+  }
+  .fk-col {
+    flex-basis: 100%;
+    display: block;
+  }
+}
+</style>
+<style>
+.fk-bullet {
+  padding: 2px 15px 2px 15px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.fk-bullet-span {
+  color: red;
+}
+
+.fk-bullet-list-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.fk-bullet-icon-container {
+  padding: 5px 10px 5px 5px;
+}
+</style>
+<style>
+.countdown {
+  text-align: center;
+  font-family: Helvetica, serif;
+}
+
+.countdown-cont {
+  display: inline-table;
+}
+
+.countdown-block {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.colon {
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.countdown-digit {
+  font-size: 1rem;
+}
+
+.hidelabel {
+  visibility: hidden;
+}
+</style>
+<style>
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 20px auto;
+  white-space: normal;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  white-space: normal;
+}
+.btn.btn-primary.btn-one-style:active:focus {
+  box-shadow: none;
+}
+.btn.btn-primary.btn-one-style:focus {
+  box-shadow: none;
+}
+</style>
+<style>
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 20px auto;
+  white-space: normal;
+  font-size: 20px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary.btnStyle:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  white-space: normal;
+}
+.btn.btn-primary.btnStyle {
+  background: #f4f4f4;
+  color: #007bff;
+  border-color: #007bff;
+  border-radius: 30px;
+  border-width: 3px;
+  padding: 6px 20px;
+  white-space: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Helvetica, serif;
+}
+.btn.btn-primary.btnStyle:active:focus {
+  box-shadow: none;
+}
+.btn.btn-primary.btnStyle:focus {
+  box-shadow: none;
+}
+</style>
+<style>
+
+.cc-page-wrapper{--navy:#14213d;--gold:#b8893b;--cream:#faf6ee;--green:#1e7d3a;--grey:#6b6b6b;background:#fff;color:#222;font-family:Helvetica,Arial,sans-serif;min-height:100vh}
+.cc-page-wrapper .cc-topbar{background:var(--navy);padding:0;margin:0}
+.cc-page-wrapper .cc-topbar .cc-cl-text{color:#fff;font-size:15px;font-weight:700;text-align:center;padding:10px 12px;letter-spacing:.2px}
+.cc-page-wrapper .cc-logo{text-align:center;padding:12px 0 4px;background:#fff}.cc-page-wrapper .cc-logo img{height:55px;width:auto;max-width:60%}
+.cc-page-wrapper .cc-crumbs{background:var(--cream);border-bottom:1px solid #eadfca;padding:0}
+.cc-page-wrapper .cc-crumbs .cc-cl-text{font-size:14px;text-align:center;color:var(--grey);padding:10px 8px}
+.cc-page-wrapper .cc-crumbs .cc-current{color:var(--navy);font-weight:700}
+.cc-page-wrapper .cc-wait{max-width:820px;margin:0 auto;padding:0 12px}
+.cc-page-wrapper .cc-wait .fk-headline{font-size:26px;text-align:center;color:var(--navy);margin-top:22px}
+.cc-page-wrapper .cc-video-wrap{max-width:820px;margin:8px auto 0;padding:0 12px}
+.cc-page-wrapper .cc-video-wrap .embed-responsive{border-radius:10px;overflow:hidden;background:#111;box-shadow:0 6px 22px rgba(20,33,61,.25)}
+.cc-page-wrapper .cc-video-note{font-size:14px;color:var(--grey);text-align:center;padding:8px 0}
+.cc-page-wrapper .cc-offer{max-width:980px;margin:0 auto;padding:6px 12px 30px}
+.cc-page-wrapper .cc-offer-card{border:2px solid var(--gold);border-radius:14px;background:#fff;padding:14px;box-shadow:0 8px 28px rgba(20,33,61,.12)}
+.cc-page-wrapper .cc-offer-card .fk-row{align-items:center}
+.cc-page-wrapper .cc-offer-card .fk-col{padding:8px}
+.cc-page-wrapper .cc-offer-card .fk-image-defaults{width:100%;height:auto;max-width:100%;border-radius:10px}
+.cc-page-wrapper .cc-pair{display:flex;gap:8px}
+.cc-page-wrapper .cc-pair-item{flex:1;text-align:center;font-size:13px;color:var(--grey)}
+.cc-page-wrapper .cc-offer-card .fk-headline{font-size:28px;line-height:1.2;color:var(--navy);text-align:left;margin-top:4px}
+.cc-page-wrapper .cc-offer-card .cc-cl-text{font-size:18px;line-height:1.45;text-align:left;color:#333}
+.cc-page-wrapper .cc-offer-card .fk-bullet{font-size:17px;font-weight:600;padding:2px 0}
+.cc-page-wrapper .cc-offer-card .fk-bullet .fa-check-circle{color:var(--green)}
+.cc-page-wrapper .cc-price{font-variant-numeric:tabular-nums;font-feature-settings:"tnum";font-size:26px;font-weight:700;color:var(--navy);text-align:left}
+.cc-page-wrapper .cc-price .cc-strike{text-decoration:line-through;color:#8a8a8a;font-weight:400;font-size:20px;margin-right:8px}
+.cc-page-wrapper .cc-price .cc-tag{display:inline-block;background:var(--gold);color:#fff;font-size:13px;font-weight:700;padding:3px 8px;border-radius:4px;vertical-align:middle;margin-left:6px}
+.cc-page-wrapper .cc-reserve .cc-cl-text{text-align:center;font-size:15px;color:var(--grey)}
+.cc-page-wrapper .cc-reserve .countdown-digit{font-size:1.6rem;font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums}
+.cc-page-wrapper .cc-reserve .countdown-block{margin:0 3px;padding:4px}
+.cc-page-wrapper .cc-cl-div-box{box-sizing:border-box}
+.cc-page-wrapper .cc-reserve .countdown-cont>.countdown-block:nth-child(-n+4){display:none}
+.cc-page-wrapper .cc-reserve .countdown-label{font-size:11px;color:var(--grey);text-transform:uppercase}
+.cc-page-wrapper .cc-chargeline .cc-cl-text{text-align:center;font-size:17px;font-weight:700;color:var(--navy)}
+.cc-page-wrapper .cc-cta{text-align:center}
+.cc-page-wrapper .cc-cta .btn.btn-primary.btn-one-style{width:100%;max-width:560px;background:var(--green);border-color:var(--green);font-weight:700;padding-top:16px;padding-bottom:16px;box-shadow:0 4px 12px rgba(30,125,58,.35)}
+.cc-page-wrapper .cc-decline{text-align:center}
+.cc-page-wrapper .cc-decline .btn.btn-primary.btnStyle,.cc-page-wrapper .cc-decline .btn.btn-primary.btnStyle:hover{background:transparent;border:0;color:var(--grey);text-decoration:underline;font-size:14px;padding:4px 8px;margin:0 auto 6px;border-radius:0}
+.cc-page-wrapper .cc-fine .cc-cl-text{font-size:13px;color:var(--grey);text-align:center}
+.cc-page-wrapper .cc-lead .cc-cl-text{font-size:14px;color:var(--grey);font-style:italic}
+.cc-page-wrapper .cc-quote .cc-cl-text{border-left:4px solid var(--gold);padding:6px 12px;font-style:italic;color:var(--navy)}
+.cc-page-wrapper .cc-offer-hidden{max-height:0;overflow:hidden;opacity:0;visibility:hidden;animation:ccOfferReveal .6s ease forwards;animation-delay:var(--cc-cue,60s)}
+@keyframes ccOfferReveal{to{max-height:5000px;opacity:1;visibility:visible;overflow:visible}}
+.cc-page-wrapper .cc-ty{max-width:860px;margin:0 auto;padding:16px 12px 40px}
+.cc-page-wrapper .cc-ty .cc-panel{border:1px solid #eadfca;border-radius:12px;background:#fff;padding:12px 16px;margin:14px 0}
+.cc-page-wrapper .cc-ty .cc-panel .fk-headline{font-size:20px;margin-top:4px;color:var(--navy)}
+.cc-page-wrapper .cc-ty .cc-cl-text{font-size:17px}
+.cc-page-wrapper .cc-ty .cc-cert .cc-cl-text{font-size:15px;color:var(--grey)}
+@media (max-width:768px){.cc-page-wrapper .cc-offer-card .fk-headline{font-size:23px}.cc-page-wrapper .cc-price{font-size:23px}.cc-page-wrapper .cc-wait .fk-headline{font-size:22px}}
+
+</style>
+</head>
+<body id="cc-id-LKydo1RHbxYl">
+<div id="cc-id-0kkbOeJy6rO6" class="cc-page-wrapper"><div id="cc-id-FxnVg8yjt2TG" class="cc-topbar"><div id="cc-id-Qh9N7gZTek2L" data-box="true" style="padding: 12px 10px; width: 100%;" class="cc-cl-div-box "><div id="cc-id-tgaXaeon1URG" data-text="text" class="cc-cl-text ">Do NOT close this window. Your order is processing.</div></div></div><div id="cc-id-Ddpk3DWqlosQ" class="cc-logo"><img id="cc-id-Geep7HKdcZoq" src="https://tanaorjewelry.com/cdn/shop/files/logo.png?height=55&v=1613753579" alt="Tanaor" class="fk-image-defaults"></div><div id="cc-id-XHBiyyoOZM4P" class="cc-crumbs"><div id="cc-id-z7Ki57hzK8N1" data-box="true" style="padding: 12px 10px; width: 100%;" class="cc-cl-div-box "><div id="cc-id-8M2L7F5NzysE" data-text="text" class="cc-cl-text ">Checkout &rarr; <span id="cc-id-2L0lZ0hYURGB" class="cc-current">Special Offers</span> &rarr; Order Receipt</div></div></div><div id="cc-id-lUfDY1fz0AxN" class="cc-wait"><div id="cc-id-TfOZVVEbGLRV" class="fk-headline cc-headline-style ">Wait, your one-time offer is ready.</div></div><div id="cc-id-Z2lHceoEtxwB" class="cc-offer"><div id="cc-id-u1aFOgN0Lpdg" class="cc-offer-card"><div id="cc-id-QVHcTGXXiWpx" class="fk-row cc-cl-two-columns"><div id="cc-id-BlmyUN9yWz5Z" class="fk-col col" align="center"><img id="cc-id-S5r2VQePzRug" class="fk-image-defaults cc-cl-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+" title="Two hearts, one Word" href="" onclick="" target="_self" alt="Two hearts, one Word" align="center" width="600" height="600" /></div><div id="cc-id-VvLbH2ps4RKG" class="fk-col col" align="center"><div id="cc-id-PRojeUJKDU7F" class="fk-headline cc-headline-style ">Two hearts, one Word.</div><div id="cc-id-FhEbAE0L5aZF" data-text="text" class="cc-cl-text ">A matching second piece in solid 14K gold for a spouse, mother or daughter, handcrafted for you.</div><ul id="cc-id-gJp4aqUJbVR6" class="fk-bullet"><li id="cc-id-lFkvp1sz1yXT"><div id="cc-id-zV49qvhSvum5" class="fk-bullet-list-container"><div id="cc-id-MzUBDu3KRgYq" class="fk-bullet-icon-container"><i id="cc-id-qwqWTlyxVFbV" class="fas fa-check-circle"></i></div><div id="cc-id-5fQgZ9zAsMKw"><div id="cc-id-FHHMg8OFfc8d">Solid 14K not plated</div></div></div></li><li id="cc-id-7S8DJuTaGXAC"><div id="cc-id-WvqG5UWRzfTk" class="fk-bullet-list-container"><div id="cc-id-swLWLlGWnaw1" class="fk-bullet-icon-container"><i id="cc-id-Mhh1SgI1l8c6" class="fas fa-check-circle"></i></div><div id="cc-id-LAgDM9BoC1Sv"><div id="cc-id-pCeFfDy6kGVh">Certificate of authenticity</div></div></div></li><li id="cc-id-oJXV8ep5LQ8s"><div id="cc-id-u8dInqVeF9Wb" class="fk-bullet-list-container"><div id="cc-id-Ifo8Sba5xOF0" class="fk-bullet-icon-container"><i id="cc-id-HoBbV4tasrVb" class="fas fa-check-circle"></i></div><div id="cc-id-WYxBDRTCPKuD"><div id="cc-id-3mxUlZOjpbLA">Lifetime warranty</div></div></div></li></ul><div id="cc-id-OX6LhZXmIzDX" class="cc-price"><span id="cc-id-WkVLQJBn4Vb8" class="cc-strike">$3,527</span>$1,764<span id="cc-id-h61sUo9GEDP3" class="cc-tag">50% OFF</span></div><div id="cc-id-agC45cI52pXc" class="cc-reserve"><div id="cc-id-I0dVzPgi8U3P" data-text="text" class="cc-cl-text ">Your one-time price is reserved for</div><div id="cc-id-cPuT6DlzgwT0" timertype="minute" class="countdown fk-countdown cc-cl-minute-countdown" endtext="EXPIRED" align="center" hours="0" minutes="5" seconds="0"><span data-js="countdown" class="countdown-cont" id="countdownCont"><div id="cc-id-wBAtk3OCFRE0" class="countdown-block"><div id="cc-id-VwMQCQUoZCNk" data-js="countdown-day" class="countdown-digit">00</div><div id="cc-id-FYf7sApSDQ1i" class="countdown-label">Days</div></div><div id="cc-id-FPPbvdwnekMN" class="countdown-block colon"><div id="cc-id-WSDFHlchVrAd"><b id="cc-id-n0hm4tYFUU9S">:</b></div><div id="cc-id-TQrpRGX1fbyn" class="countdown-label hidelabel">:</div></div><div id="cc-id-qCpmV5TcW59H" class="countdown-block"><div id="cc-id-gt9FIEff2Zht" data-js="countdown-hour" class="countdown-digit">00</div><div id="cc-id-sAvCSMPbEKY5" class="countdown-label">Hours</div></div><div id="cc-id-KPQI156pHSgI" class="countdown-block colon"><div id="cc-id-n7ZTOeXwblfr"><b id="cc-id-PutU1rJhZPgw">:</b></div><div id="cc-id-cn6q3osGxcVg" class="countdown-label hidelabel">:</div></div><div id="cc-id-eIcqF1JpMmBD" class="countdown-block"><div id="cc-id-DjdrQzAG6kpA" data-js="countdown-minute" class="countdown-digit">00</div><div id="cc-id-2pQSFAZ4R1bE" class="countdown-label">Minutes</div></div><div id="cc-id-3bSUaa2Xi7Iu" class="countdown-block colon"><div id="cc-id-EbVYazeS50Rt"><b id="cc-id-bA1yg31Vmk2B">:</b></div><div id="cc-id-BZXCDtenUnV1" class="countdown-label hidelabel">:</div></div><div id="cc-id-UEZZjjRFNt9Z" class="countdown-block"><div id="cc-id-0l0NgLI6FHsZ" data-js="countdown-second" class="countdown-digit">00</div><div id="cc-id-S4ckPktu8pNn" class="countdown-label">Seconds</div></div></span><span id="cc-id-cEWSJDv6sfqm" data-js="countdown-endtext" class="countdown-endtext"></span></div></div><div id="cc-id-clBYpr4q9hYH" class="cc-chargeline"><div id="cc-id-pKEVUN4sqj3X" data-text="text" class="cc-cl-text ">Yes, add the matching piece: one-time charge of $1,764</div></div><div id="cc-id-DWMV0ZqyQImU" class="cc-cta"><button id="cc-id-FQDqqPC2h5pC" class="btn btn-primary btn-one-style" action="submit" onclick="callMethod(event)">Complete Checkout</button></div><div id="cc-id-i2MtzbhsGOmQ" class="cc-decline"><button id="cc-id-TDr6ppIV2EUC" class="btn btn-primary btnStyle" action="route" onclick="route(event)">No thanks, I only need one</button></div><div id="cc-id-raPfqb2kRSts" class="cc-fine"><div id="cc-id-rDQtDRijkDPR" data-text="text" class="cc-cl-text ">One click. Your card on file is charged. No re-entering payment.</div></div></div></div></div></div></div>
+</body>
+</html>
